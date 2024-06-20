@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:wallet_app/services/api_service.dart';
+
+class WalletProvider with ChangeNotifier {
+  String _token;
+  String _walletAddress;
+  double _balance;
+
+  String get token => _token;
+  String get walletAddress => _walletAddress;
+  double get balance => _balance;
+
+  Future<void> login(String username, String password) async {
+    _token = await ApiService.login(username, password);
+    notifyListeners();
+  }
+
+  Future<void> createWallet() async {
+    _walletAddress = await ApiService.createWallet(_token);
+    notifyListeners();
+  }
+
+  Future<void> getBalance() async {
+    _balance = await ApiService.getBalance(_token, _walletAddress);
+    notifyListeners();
+  }
+
+  Future<void> transferBalance(String toWallet, double amount) async {
+    await ApiService.transferBalance(_token, _walletAddress, toWallet, amount);
+    await getBalance();
+  }
+
+  Future<void> requestAirdrop() async {
+    await ApiService.requestAirdrop(_token, _walletAddress);
+    await getBalance();
+  }
+}
