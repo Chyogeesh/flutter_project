@@ -1,0 +1,14 @@
+lib/
+├── main.dart
+├── models/
+│   └── wallet.dart
+├── providers/
+│   └── wallet_provider.dart
+├── services/
+│   └── api_service.dart
+├── screens/
+│   └── home_screen.dart
+│   └── login_screen.dart
+│   └── wallet_screen.dart
+└── widgets/
+    └── wallet_card.dart
