@@ -12,3 +12,5 @@ Organize your project structure.
 Implement API calls in api_service.dart.
 5. State Management
 Manage state using Provider in wallet_provider.dart.
+6. UI Implementation
+Create the UI components.
