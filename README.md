@@ -4,3 +4,5 @@ Creating a wallet application in Flutter involves several steps, including UI de
 
 1. Setup Flutter Project
 Start by creating a new Flutter project
+2. Dependencies
+Add necessary dependencies in pubspec.yaml
