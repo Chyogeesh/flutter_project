@@ -14,4 +14,7 @@ Implement API calls in api_service.dart.
 Manage state using Provider in wallet_provider.dart.
 6. UI Implementation
 Create the UI components.
-7.
+7. Testing and Debugging
+Thoroughly test the application to ensure all functionalities work as expected. Use Flutter's debugging tools to identify and fix any issues.
+8. Documentation
+Create a README.md file with setup instructions and provide documentation for API endpoints used.
