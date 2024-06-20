@@ -14,3 +14,4 @@ Implement API calls in api_service.dart.
 Manage state using Provider in wallet_provider.dart.
 6. UI Implementation
 Create the UI components.
+7.
