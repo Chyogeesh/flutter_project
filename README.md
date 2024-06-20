@@ -10,3 +10,5 @@ Add necessary dependencies in pubspec.yaml
 Organize your project structure.
 4. API Service
 Implement API calls in api_service.dart.
+5. State Management
+Manage state using Provider in wallet_provider.dart.
