@@ -8,3 +8,5 @@ Start by creating a new Flutter project
 Add necessary dependencies in pubspec.yaml
 3. Project Structure
 Organize your project structure.
+4. API Service
+Implement API calls in api_service.dart.
